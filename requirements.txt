@@ -1,0 +1,7 @@
+gradio
+assemblyai
+python-dotenv
+pandas
+openpyxl
+openai
+soundfile
