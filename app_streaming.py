@@ -90,7 +90,7 @@ def generate_gpt(template_name, transcription):
     try:
         response =  client.chat.completions.create(
             messages=[
-                {"role": "system", "content": "You are an expert in medical summarisation and report creation, vital for doctors who depend on you to accurately condense conversations with patients into concise, structured summaries. Strive for excellence to meet their needs, as your work is crucial to their careers."},
+                {"role": "system", "content": "You are an expert in medical summarisation and report creation, vital for doctors who depend on you to accurately condense conversations with patients into concise, structured summaries in british english. Strive for excellence to meet their needs, as your work is crucial to their careers."},
                 {"role": "user", "content": prompt + transcription + template}
             ],
             model="gpt-4-turbo-preview",
